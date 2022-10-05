@@ -1,0 +1,271 @@
+
+
+body {
+    background-color: rgba(29, 32, 33, 0.9);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+    color: honeydew;
+}
+
+h1{
+    font-weight: 500;
+    font-size:inherit;
+    outline: none;
+    text-decoration: none;
+
+
+}
+
+h2{
+    font-weight: 500;
+    font-size:inherit;
+    outline: none;
+    text-decoration: none;
+
+
+}
+
+h3{
+    font-weight: 200;
+    font-size:inherit;
+    outline: none;
+    text-decoration: none;
+    padding-right: 1vw;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+a:link {
+    color: #eec908;
+}
+a:visited {
+    color: #eea508;
+
+}
+a:focus {
+    border-bottom: 1px solid;
+    font-weight: 500;
+}
+a:hover {
+    border-bottom: 1px solid;
+    font-weight: 500;
+}
+a:active {
+    font-weight: 800;
+    background: rgba(1, 69, 109, 0.45);
+    color: #eec908;
+}
+
+
+.title {
+    position:relative;
+    padding-left: 3vh;
+    padding-top: 3vh;
+    font-style: normal;
+    font-weight: 500;
+    /**/
+    line-height: 130%;
+    font-size: 175%;
+    grid-area: 1 / 1;
+
+}
+.in_line h1{
+    display:inline;
+}
+#in_line{
+    display:inline;
+}
+
+.cv_padding{
+    margin-left: 10vh;
+
+}
+
+.parent_photos{
+    position:relative;
+    display: grid;
+    grid-area: 1 / 2 ;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.python_photo{
+    align-items: center;
+    padding: 5%;
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+.java_photo{
+    padding: 5% 5% 5% 20%;
+    grid-area: 2 / 1 / 3 / 2;
+}
+.java_jpg{
+    width: 220px;
+}
+
+
+/*COLORS*/
+.gradient_blue{
+    background: -webkit-linear-gradient(0deg, #0964b4 0%, rgb(33, 134, 215) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+.gradient_green{
+    background: -webkit-linear-gradient(0deg, rgb(61, 122, 5) 0%, rgba(57,142,33,1) 30%, rgb(238, 201, 8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+.title_blue{
+    color: #0964b4;
+}
+.tile_green{
+    color: #9cea48;
+}
+.title_orange{
+    color: #f3711a;
+}
+.title_purple{
+    color: #8a098a;
+    margin-left: 10vh;
+}
+.title_yellow{
+    color: rgb(255, 215, 71);
+}
+
+
+
+#header{
+    font-weight: 200;
+    font-size: 115%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1vh;
+
+}
+
+.header_text{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 2.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+}
+
+
+
+#box0 {
+    font-stretch: condensed;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: inherit;
+    font-weight: 500;
+    position: relative;
+    border: 1px solid black;
+    background-color: #1d2021;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 0;
+}
+
+
+#box1{
+    padding: 4vw 10vw 4vw 3vw;
+    position: relative;
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57, 142, 33, 0.84) 80%, rgba(67, 150, 37, 0.75) 83%, rgba(107,145,14,1) 100%);
+}
+
+
+#box2{
+    padding: 3vw 10vw 4vw 3vw;
+    position: relative;
+    border: 1px solid black;
+    background-color: #1d2021;
+}
+
+
+#box3{
+    padding: 2vw 15vw 2vw 2vw;
+    position: relative;
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(1, 69, 109) 40%, rgb(12, 105, 161) 65%, rgb(23, 104, 211) 88%, rgb(119, 175, 16) 100%);
+}
+
+
+#box4{
+    position: relative;
+    border: 1px solid black;
+    background-color: #1d2021;
+
+}
+
+.skill_title{
+    font-size: 150%;
+    justify-content: center;
+    display: flex;
+    padding: 3% 3% 0 3%;
+}
+.skill_text_box{
+    display:flex;
+}
+.center{
+    font-size:130%;
+    justify-content: center;
+}
+#skills_column{
+    font-size: 125%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+}
+.hard_skills{
+    padding: 1vw;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.soft_skills{
+    padding: 1vw;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.skill_name{
+    font-size: 120%;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#box5{
+    position: relative;
+    border: 1px solid black;
+    background-color: #211d1e;
+}
+.box5_title{
+    padding: 2vw;
+    font-size: 150%;
+    font-style: italic;
+
+}
+
+#box6{
+    position: relative;
+    border: 1px solid black;
+    background-color: saddlebrown;
+    height: 5vh;
+}
+
+
+
